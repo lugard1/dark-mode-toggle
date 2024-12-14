@@ -3,7 +3,7 @@ const inputEl = document.querySelector('.input');
 const bodyEl = document.querySelector('body');
 
 // console.log(inputEl.checked);
-inputEl.checked = localStorage.getItem('mode');
+inputEl.checked = JSON.parse(localStorage.getItem('mode'));
 
 updateBody()
 
